@@ -16,9 +16,10 @@ const getDetail = async () => {
     container.innerHTML = `
       <div class="products-content">
         <img src="${product.image}" alt="" />
-        <h4>${product.title}</h4>
-        <p>${product.description}</p>
-        <b>${product.price}$</b>
+        <input id="product-title" value="${product.title}" />
+        <input id="product-description" value="${product.description}" />
+        <input id="product-price" value="${product.price}" />
+        <button >Save</button>
       </div>
     `;
   } catch (err) {
